@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: "verified-agent-identity"
+version: "1.0.0"
+description: "Decentralized identity toolkit for AI agents using iden3 self-sovereign DIDs, human linking, and x402 payment signing."
+author: "BillionsNetwork & Verified Agent Identity Contributors"
+license: "MIT"
+metadata:
+  domain: "Security / Decentralized Agent Identity (DID), Attestation & x402 Protocol"
+  category: "Security"
+  framework: "Billions Network / iden3 / viem / ethers.js"
+  language: "JavaScript"
+skills:
+  - "decentralized-did-management"
+  - "human-agent-linking"
+  - "cryptographic-challenge-signing"
+  - "x402-payment-protocol"
+tools:
+  - "did-identity-creator"
+  - "human-identity-linker"
+  - "challenge-signer"
+  - "x402-payment-signer"
+  - "identity-verifier"

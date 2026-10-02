@@ -1,0 +1,16 @@
+name: "human-identity-linker"
+description: "Generates linking challenges and records verified human owner attestations for the agent DID."
+input_schema:
+  type: object
+  properties:
+    agent_did:
+      type: string
+      description: "Decentralized identifier of the agent to link."
+    human_wallet_address:
+      type: string
+      description: "Ethereum address of the prospective human owner."
+    attestation_signature:
+      type: string
+      description: "Signed confirmation message from the human owner's wallet."
+  required:
+    - agent_did

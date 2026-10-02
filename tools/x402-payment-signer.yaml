@@ -1,0 +1,13 @@
+name: "x402-payment-signer"
+description: "Constructs and cryptographically signs PAYMENT-SIGNATURE headers for HTTP 402 responses."
+input_schema:
+  type: object
+  properties:
+    payment_requirements:
+      type: object
+      description: "Parsed requirements from HTTP 402 response (recipient, amount, token, chain_id)."
+    max_fee_allowance:
+      type: number
+      description: "Maximum approved token payment cap."
+  required:
+    - payment_requirements

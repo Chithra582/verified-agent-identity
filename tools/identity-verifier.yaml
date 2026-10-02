@@ -1,0 +1,16 @@
+name: "identity-verifier"
+description: "Verifies the cryptographic validity of DID documents, signatures, and human attestation links."
+input_schema:
+  type: object
+  properties:
+    target_did:
+      type: string
+      description: "Decentralized identifier to inspect and verify."
+    signature_to_verify:
+      type: string
+      description: "Digital signature string to validate against target DID."
+    signed_payload:
+      type: string
+      description: "Original raw payload that was signed."
+  required:
+    - target_did

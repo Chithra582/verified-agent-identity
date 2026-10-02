@@ -1,0 +1,17 @@
+name: "challenge-signer"
+description: "Signs authentication challenge nonces using the agent's private signing key."
+input_schema:
+  type: object
+  properties:
+    challenge_nonce:
+      type: string
+      description: "Random cryptographic nonce provided by the challenging server."
+    audience:
+      type: string
+      description: "Domain or identifier of the requesting party."
+    expiry_timestamp:
+      type: integer
+      description: "Unix epoch timestamp when the challenge expires."
+  required:
+    - challenge_nonce
+    - audience
